@@ -139,7 +139,7 @@ function showStatus(fullName) {
         modal.style.display = 'none'
         document.getElementById('order-container').classList.add('success')
         document.getElementById('order-container').innerHTML =
-            `<h4>Thanks ${fullName}! Your order is on its way.</h4>`
+            `<p class="price">Thanks ${fullName}! Your order is on its way.</p>`
     }, 1500)
 }
 

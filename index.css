@@ -187,9 +187,14 @@ header h2 {
     flex-direction: column;
 }
 
-.modal-inner h3 {
+.modal-inner h3,
+input,
+.btn-modal {
     font-family: Verdana, sans-serif;
     font-size: 1rem;
+}
+
+.modal-inner h3 {
     font-weight: bold;
     padding: 2.875rem;
     text-align: center;
@@ -203,13 +208,14 @@ form {
 }
 
 input{
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
     margin: 10px;
     height: 71px;
     border: 1px solid #757575;
     padding: 1rem;
     width: 90%;
     border-radius: 4px;
-    font-size: 1rem;
 
 }
 
@@ -237,7 +243,7 @@ input{
     margin-top: 2.8125rem;
 }
 
-.success h4{
+.success p{
     font-size: 2rem;
     color: #065F46;
 }
@@ -247,3 +253,48 @@ input{
 .hidden {
     display: none;
 }
+
+/* hover and focus states */
+
+.btn-menu-add:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn-menu-add:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 2px solid #16DB99;
+  outline-width: 0
+}
+
+.btn-menu-remove:hover {
+  color: #EF5350;
+}
+
+.btn-menu-remove:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 2px solid #EF5350;
+  outline-width: 0;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+input:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 2px solid #16DB99;
+  outline-width: 0
+  }
+
+.btn-modal:focus,
+.btn-order:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 2px solid #757575;
+  outline-width: 0
+  }
