@@ -2,6 +2,16 @@ import { menuArray } from '/data.js'
 
 let orderArray = []
 
+// render the app
+
+function render() {
+  document.getElementById('menu-container').innerHTML = getMenuHtml()
+}
+
+render()
+
+// handle DOM clicks
+
 document.addEventListener('click', function (e) {
     if (e.target.dataset.add) {
         handleOrderItemClick(e.target.dataset.add)
@@ -113,7 +123,7 @@ function getOrderSummaryHtml() {
     document.getElementById('order-container').innerHTML = orderSummaryHtml
 }
 
-// complete order and show order form / success message
+// complete order and show order form
 
 function completeOrder() {
     const modal = document.getElementById('modal')
@@ -130,6 +140,8 @@ function completeOrder() {
     })
 }
 
+// show final success message
+
 function showStatus(fullName) {
     const submitBtn = document.getElementById('submit')
     submitBtn.innerHTML = `
@@ -142,9 +154,3 @@ function showStatus(fullName) {
             `<p class="price">Thanks ${fullName}! Your order is on its way.</p>`
     }, 1500)
 }
-
-function render() {
-    document.getElementById('menu-container').innerHTML = getMenuHtml()
-}
-
-render()

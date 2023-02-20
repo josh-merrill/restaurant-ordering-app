@@ -248,15 +248,9 @@ input{
     color: #065F46;
 }
 
-/* utility */
-
-.hidden {
-    display: none;
-}
-
 /* hover and focus states */
 
-.btn-menu-add:hover {
+.btn-menu-add:hover, {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -276,10 +270,9 @@ input{
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 2px solid #EF5350;
+  color: #EF5350;
+  border: none;
   outline-width: 0;
-  padding: 1px;
-  border-radius: 5px;
 }
 
 input:focus {
@@ -298,3 +291,20 @@ input:focus {
   border: 2px solid #757575;
   outline-width: 0
   }
+
+  /* utilities */
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+position: absolute;
+clip: rect(0 0 0 0);
+height: 1px;
+width: 1px;
+margin: -1px;
+padding: 0;
+border: 0;
+overflow: hidden;
+}

@@ -30,14 +30,15 @@
         <div class="modal-inner" id="modal-inner">
           <h3>Enter card details</h3>
           <form id="order-form">
-            <input
+            <label for="name" class="visually-hidden">Name</label>
+            <input id="name"
               type="text"
               name="full-name"
               placeholder="Enter your name"
               required
             />
-            <input
-              type="tel"
+            <label for="CCN" class="visually-hidden">Credit Card Number</label>
+            <input id="CCN"
               name="card-number"
               inputmode="numeric"
               pattern="[0-9\s]{13,19}"
@@ -46,7 +47,8 @@
               placeholder="Enter your card number"
               required
             />
-            <input
+            <label for="CVC" class="visually-hidden">CVC Number</label>
+            <input id="CVC"
               type="tel"
               name="CVC"
               inputmode="numeric"
