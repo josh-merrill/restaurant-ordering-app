@@ -54,7 +54,7 @@ function getMenuHtml() {
             <div class="menu-item-details">
                 <h3>${name}</h3>
                 <p>${ingredients}</p>
-                <h4>$${price}</h4>
+                <p class="price">$${price}</p>
             </div>
             <div class="btn-menu-container">
                 <button class="btn-menu-add" id="btn-menu-add" data-add="${id}">+</button>
@@ -91,7 +91,7 @@ function getOrderSummaryHtml() {
                     <h3>${name}</h3>
                     <button class="btn-menu-remove" id="btn-menu-remove" data-remove="${id}">Remove</button>
                 </div>
-                <h4>$${price}</h4>
+                <p class="price">$${price}</p>
             </div>
             `
         })
@@ -103,7 +103,7 @@ function getOrderSummaryHtml() {
             <div class="order-divider"></div>
             <div class="order-total">
                 <h3>Total price</h3>
-                <h4>$${totalOrderPrice}</h4>
+                <p class="price">$${totalOrderPrice}</p>
         </div>
         <button class="btn-order" id="btn-order">Complete Order</button>
     `

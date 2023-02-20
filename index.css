@@ -25,7 +25,7 @@ main {
 
 h1, h2, h3, h4 {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 h1, h2 {
@@ -44,18 +44,20 @@ h3 {
     font-size: 1.75rem;
 }
 
-h4 {
-    font-size: 1.25rem;
-}
-
 p {
     color: #8B8B8B;
 }
 
-header h1, 
+header h1,
 header h2 {
     margin: 0 auto;
     max-width: 600px;
+}
+
+.price {
+  color: #000000;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 /* menu styling */
@@ -71,7 +73,7 @@ header h2 {
     gap: 2em;
     margin-bottom: 3.1875em;
 }
-  
+
 .menu-item-details {
     direction: flex;
     flex-direction: column;
@@ -107,16 +109,16 @@ header h2 {
     padding: 0.5rem 1rem;
     background: none;
 }
-    
+
 .btn-menu-remove {
     font-family: 'Smythe', cursive;
     color: #8B8B8B;
     background: none;
     border: none;
 }
-    
+
 /* order styling */
-    
+
 .order-details {
     display: flex;
     justify-content: space-between;
@@ -201,14 +203,14 @@ form {
 }
 
 input{
-    margin: 10px; 
+    margin: 10px;
     height: 71px;
     border: 1px solid #757575;
     padding: 1rem;
     width: 90%;
     border-radius: 4px;
     font-size: 1rem;
-    
+
 }
 
 /* modal button */
@@ -239,9 +241,9 @@ input{
     font-size: 2rem;
     color: #065F46;
 }
-    
+
 /* utility */
-    
+
 .hidden {
     display: none;
 }
